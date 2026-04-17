@@ -11,7 +11,7 @@ public class RemoveTest {
         String name = "John";
         String phoneNumber = "302-555-4545";
         phoneBook.add(name, phoneNumber);
-        Assert.assertTrue(phoneBook.hasEntry(name, phoneNumber));
+        Assert.assertTrue(phoneBook.hasEntry("John", "302-555-4545"));
 
         // when
         phoneBook.remove(name);
